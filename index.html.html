@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta http-equiv="refresh" content="">
+        <title>FATHER PLEASE LET ME FALL INTO YOUR HANDS</title>
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+        <style>
+            body {
+                margin: 0px;
+            }
+            div {
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 8px;
+                border: 1px solid black;
+                width: 240px;
+                margin-bottom: 20px;
+                color: green;
+                position: relative;
+                height: fit-content;
+            }
+            div ul {
+                list-style-type: disc;
+            }
+            div.listar {
+                width: 100%;
+                border-radius: 0px;
+            }
+            ul.lister {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333333;
+            }
+            ul.lister li {
+                float: left;
+            }
+            ul.lister li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 16px;
+                text-decoration: none;
+                font-size: 16px;
+            }
+            ul.lister li a:hover {
+                background-color: #111111;
+            }
+            #myTolu {
+                background-color: #111111;
+                padding: 15px;
+                font-size: 20px;
+            }
+            /* div#drinks {
+                position: relative;
+            } */
+            h1 {
+                position: absolute;
+                top: 0px;
+                background-color: #111111;
+                margin: 0px;
+                width: 100%;
+                font-size: 16px;
+                border-radius: 7px 7px 0px 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="listar" id="myTolu">
+            <ul class="lister">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#news">NEWS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#about">ABOUT</a></li>
+            </ul>
+        </div>
+        <div id="drinks">
+            <h1>DRINKS</h1>
+            <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+                <li>Alcohol</li>
+                <li>Water</li>
+            </ul>
+        </div>
+        <div>
+            <h1>CLOTHES</h1>
+            <ol type="i">
+                <li>Sweaters</li>
+                <li>Shirts</li>
+                <li>Suits</li>
+                <li>Blazzers</li>
+                <li>Trousers</li>
+                <li>Sweat Shirts</li>
+            </ol>
+        </div>
+        <div>
+            <h1>DESCRIPT LIST</h1>
+            <dl>
+                <dt>Coffee</dt>
+                <dd>A drink I have never drank</dd>
+                <dt>Tea</dt>
+                <dd>A drink i take once in a month</dd>
+                <dt>Mineral Drinks(COCA-COLA,)</dt>
+                <dd>A drink i take whenever i do have money.</dd>
+            </dl>
+        </div>
+        <!-- NESTED LISTS -->
+        <div>
+            <h1>VEHICLES</h1>
+            <ol start="50">
+                <li>Bicycles</li>
+                <li>Cars</li>
+                <li>Motorcycles</li>
+                <li>Large Trucks
+                    <ul style="list-style-type: square">
+                        <li>Caterpillar</li>
+                        <li>Dumper Trucks</li>
+                        <li>Tipper</li>
+                        <li>Long Lorry</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <button onclick="myTolu(), document.location='#myTolu'">CHANGE</button>
+
+        <script>
+            function myTolu() {
+                document.getElementById("myTolu").innerHTML = "TOLU.com";
+                document.getElementById("myTolu").style.fontSize = "36px";
+            }
+        </script>
+    </body>
+</html>
